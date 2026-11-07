@@ -1,0 +1,16 @@
+[project]
+name = "line-window-center"
+version = "0.1.0"
+description = "將 LINE 學員聊天視窗移至主要螢幕中央"
+requires-python = ">=3.11"
+dependencies = []
+
+[project.scripts]
+line-window-center = "line_window_center:main"
+
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[tool.hatch.build.targets.wheel]
+packages = ["src/line_window_center"]
